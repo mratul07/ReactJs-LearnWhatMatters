@@ -9,12 +9,15 @@ function App() {
 
   const addValue = () => {
     // counter += 1;
-    setCounter(counter+1)
-    console.log(counter)
+    if(counter < 20){
+      setCounter(counter+1)
+    }
   }
 
   const decreseValue = () => {
-    setCounter(counter-1)
+    if(counter != 0){
+      setCounter(counter-1)
+    }
   }
   return (
     <>
